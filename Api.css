@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    width: 100%;
+    margin-top: 30px;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px; /* Set a maximum width for the product list */
+    margin: 0 auto; /* Center the product list */
+}
+
+.productCard {
+    background-color: #fff;
+    width: 220px; /* Width of each product card */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left; /* Align text to the left within the card */
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.productCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /* Rounded corners on the top */
+}
+
+.productDetails {
+    padding: 15px;
+}
+
+.productDetails h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.productDetails p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.productDetails p.description {
+    font-size: 13px; /* Adjust description font size */
+    margin-bottom: 10px; /* Add spacing below the description */
+}
+
+.productDetails p.category {
+    font-size: 12px; /* Adjust category font size */
+    color: #888; /* Lighter color for category */
+    margin-bottom: 5px;
+}
+
+.productDetails p.price {
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 10px;
+}
